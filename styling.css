@@ -1,0 +1,134 @@
+body {
+    margin-top: 75px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+}
+
+header {
+    display: flex;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    display: flex;
+}
+
+li {
+    padding: 10px;
+
+}
+
+li:hover{
+    color: red;
+}
+
+#logo {
+    padding: 10px;
+}
+
+#logo:hover {
+    color: red;
+}
+
+#footer {
+    text-align: center;
+    width: 100%;
+
+}
+
+.project-box {
+    padding: 20px;
+    margin: 50px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow-wrap: break-word;
+    height: 300px;
+    width: 800px;
+    object-fit: cover;
+}
+
+.img:hover{
+    cursor: pointer;
+}
+
+.projects {
+    text-align: center;
+}
+
+
+.contact {
+    margin-bottom: 80px;
+}
+
+.contact-links {
+    margin-bottom: 120px;
+    font-size: 20px;
+
+}
+
+.contact-links a{
+    color: gray;
+    text-decoration: none;
+}
+span:after {
+    content: "||";
+    color: blue;
+    padding: 10px;
+}
+
+#spanSpecial:before {
+    content: "||";
+    color: blue;
+    padding: 10px;
+}
+
+.project-box {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-evenly;
+}
+
+.project-box img {
+    flex: 2; /* Take 2 parts of the space */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-box .text-content {
+    flex: 2.5; /* Take 3 parts of the space */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.image-content {
+    flex: 2.5; /* Allocate space for the image */
+    display: flex; /* Enables alignment for the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden; /* Ensures image doesn't overflow the container */
+}
+
+.image-content img {
+    object-fit: cover; /* Crop the image to fit its container */
+    max-width: 100%; /* Prevent image from exceeding container width */
+    max-height: 100%; /* Prevent image from exceeding container height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.small-box {
+    border-color: blue;
+}
+
+
+header ul li a {
+    text-decoration: none;
+    color: inherit;
+}
