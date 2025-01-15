@@ -66,7 +66,9 @@ h1, h3 {
     color: #5A9BD5; /* Dark Green for headings */
 }
 
-
+a {
+    text-decoration: none;
+}
 
 li {
     padding: 10px;
