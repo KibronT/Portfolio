@@ -3,22 +3,33 @@
     <head>
         <meta charset="UTF=8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Site</title>
+        <title>Kibron's Portfolio</title>
         <link rel="stylesheet" href="styling.css">
     </head>
 
+
+
     <body class="body">
-        <header>
-            <!-- <a id="logo" href="">Kibron</a> -->
-            <ul>   
-                <li id="projectID1" > <a href="#projectID"> Projects</a></li>
-                <li id="contact1"><a href="#contact">Contact</a></li>
-            </ul>
-        </header>
+        <div class="nav-bar">
+            <header>
+                <!-- <a id="logo" href="">Kibron</a> -->
+                <ul>   
+                    <li  > <a id="projectID1" href="#projectID"> Projects</a></li>
+                    <li ><a id="contact1" href="#contact">Contact</a></li>
+                </ul>
+            </header>
+        </div>
 
         <section class="introduction">
-            <p>Hello, my name is Kibron. Check out my personal 
-               <a href="#footer">projects</a>.
+            <h1>Hey, I'm Kibron</h1>
+
+            <p class="intro-text">I'm a <strong>Data Analyst</strong> and <strong>Front-End Developer</strong>, 
+                focused on using <strong>data</strong> to create meaningful solutions. In addition to analyzing 
+                <strong>complex datasets</strong> and building <strong>intuitive web applications</strong>, I'm also deeply engaged 
+                in <strong>research</strong>, exploring ways that technology can <strong>improve</strong> lives and inform <strong>decision-making</strong>. 
+                Here, you can explore my projects and see how I use data and technology to solve real-world 
+                problems.
+               <!-- <a href="#projectID">projects</a>. -->
             </p>
         </section>
 
@@ -26,13 +37,13 @@
             <div>
                 <h1 id="projectID">Projects</h1>
             </div>
-
+        <div class="parent-box">
             <div class="project-box">
                 <div class="image-content">
-                   <a href="https://thatlab.umd.edu" target=”_blank”> <img src="yay.jpg" alt="Project image"> </a>
+                   <a href="https://thatlab.umd.edu" target=”_blank”> <img src="THATLab.png" alt="Project image"> </a>
                 </div>
                 <div class="text-content">
-                    <h3>Project 1</h3>
+                    <h3>Research Lab Website</h3>
                     <p>
                         As a front-end developer and researcher at THAT Lab, I enhanced the 
                         website to better showcase our work in human-computer interaction. 
@@ -44,38 +55,77 @@
 
             <div class="project-box">
                 <div class="image-content">
-                   <a href="https://thatlab.umd.edu" target=”_blank”> <img src="yay.jpg" alt="Project image"> </a>
+                   <a href="https://github.com/KibronT/IMDB-Analysis.git" target=”_blank”> <img src="Screenshot 2025-01-14 at 6.37.06 PM.png" alt="Project image"> </a>
                 </div>
                 <div class="text-content">
-                    <h3>Project 1</h3>
+                    <h3>IMDb Insights & Models</h3>
                     <p>
-                        As a front-end developer and researcher at THAT Lab, I enhanced the 
-                        website to better showcase our work in human-computer interaction. 
-                        This project highlights my skills in web development, accessibility, 
-                        and user-centered design.
+                        This project involved analyzing the IMDB dataset to explore relationships 
+                        between movie ratings, metascores, and gross earnings. I visualized data 
+                        using scatterplots and calculated the Pearson correlation coefficient to 
+                        identify key patterns. To ensure data accuracy, I applied the interquartile 
+                        range (IQR) method to detect and remove outliers. Additionally, I built regression 
+                        models and conducted hypothesis testing to compare metascores between action and 
+                        non-action movies. 
+ 
                     </p>
                 </div>
             </div>
 
+            <div class="project-box">
+                <div class="image-content">
+                   <a href="https://github.com/KibronT/Fox-News-Analysis.git" target=”_blank”> <img src="A2.png" alt="Project image"> </a>
+                </div>
+                <div class="text-content">
+                    <h3>Fox News Trends & Analysis</h3>
+                    <p>
+                        Analyzed engagement metrics such as reactions, comments, and shares on Fox 
+                        News social media posts, uncovering patterns in audience behavior. 
+                        Created histograms, scatterplots, and statistical summaries to visualize 
+                        trends and identify correlations. Conducted hypothesis testing, including a 
+                        Z-test, to evaluate shifts in audience sentiment and measure the impact of 
+                        controversial topics. This project highlights my proficiency in data analysis, 
+                        visualization, and statistical modeling to derive actionable insights and inform 
+                        decision-making.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="image-content">
+                   <a href="#" target=”_blank”> <img src="PortfolioScreenshot.png" alt="Project image"> </a>
+                </div>
+                <div class="text-content">
+                    <h3>Personal Website</h3>
+                    <p>
+                        This page! It’s designed to showcase my work with clarity and ease of navigation. 
+                        I used Figma to plan and design the layout before beginning development. 
+                        The website is fully responsive, user-friendly, and features a clean, 
+                        professional layout. 
+                    </p>
+                </div>
+            </div>
+        </div>
            
 
             <h1 class="contact" id="contact">Contact Me</h1>
             <div class="contact-links">
                 <span id="spanSpecial">
-                    <a href="mailto:jskdhgdjh@gmail.com">jskdhgdjh@gmail.com</a>
+                    <a >kibrontes@gmail.com</a>
                 </span>
-                <span>
-                    <a href="#">LinkedIn</a>
+                <span spanSpecial>
+                    <a href="www.linkedin.com/in/kibron">LinkedIn</a>
                 </span>
-                <span>
-                    <a href="#">GitHub</a>
+                <span spanSpecial>
+                    <a href="https://github.com/KibronT">GitHub</a>
                 </span>
             </div>
         </section>
 
         <div id="footer">
             <footer>
-                <p>Made by Kibron Tesatsion © 2024</p>
+                <p>Made by Kibron Tesfatsion © 2025</p>
             </footer>
         </div>
     </body>

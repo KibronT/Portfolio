@@ -1,30 +1,88 @@
 body {
-    margin-top: 75px;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-header {
-    display: flex;
-}
+
 ul {
+    display: flex;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
     margin-left: auto;
-    display: flex;
+    float: right;
+    font-size: 20px;
 }
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    width: 65%;
+    background-color: #FAFAFA; /* Off-white background */
+}
+
+
+.introduction {
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    margin: 50px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the content */
+    width: 60%; /* Adjust the width for better spacing */
+    margin: 50px auto; /* Center the section horizontally */
+    padding: 30px; /* Add padding for better spacing */
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd); /* Subtle gradient background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 12px; /* Rounded corners */
+}
+
+.intro-text {
+    font-size: 22px; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increase line spacing for better readability */
+    text-align: center; /* Center-align the text */
+    color: #333; /* Dark gray text color */
+}
+
+.introduction h1 {
+    font-size: 28px; /* Larger heading font size */
+    margin-bottom: 15px; /* Add spacing below the heading */
+    color: #5A9BD5; /* Blue color to match the theme */
+}
+
+.intro-text {
+    font-size: 20px;
+}
+
+
+h1, h3 {
+    color: #5A9BD5; /* Dark Green for headings */
+}
+
+
 
 li {
     padding: 10px;
 
 }
 
-li:hover{
-    color: red;
+#projectID1:hover, #contact1:hover {
+    color: #A1B3C1;
+    transform: scale(1.2);
 }
+
+#projectID1, #contact1 {
+    transition: transform 0.3s ease, color 0.3s ease;  /* Smooth transition for scale and color */
+}
+
+
 
 #logo {
     padding: 10px;
@@ -51,6 +109,12 @@ li:hover{
     height: 300px;
     width: 800px;
     object-fit: cover;
+}
+
+.parent-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img:hover{
@@ -99,6 +163,7 @@ span:after {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 .project-box .text-content {
@@ -128,7 +193,14 @@ span:after {
 }
 
 
+
 header ul li a {
     text-decoration: none;
     color: inherit;
+}
+
+.new-section{
+    color: red;
+    align-items: right;
+    float: end;
 }
