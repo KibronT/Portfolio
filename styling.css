@@ -47,7 +47,6 @@ ul {
 .intro-text {
     font-size: 22px; /* Slightly larger font size for readability */
     line-height: 1.6; /* Increase line spacing for better readability */
-    text-align: center; /* Center-align the text */
     color: #333; /* Dark gray text color */
 }
 
