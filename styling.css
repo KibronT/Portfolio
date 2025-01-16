@@ -141,7 +141,7 @@ li {
     color: gray;
     text-decoration: none;
 }
-span:after {
+.contact-links span:after {
     content: "||";
     color: blue;
     padding: 10px;
