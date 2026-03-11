@@ -1,129 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF=8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kibron's Portfolio</title>
-        <link rel="stylesheet" href="styling.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kibron's Portfolio</title>
+    <meta name="description" content="Kibron Tesfatsion — Data Analyst & Front-End Developer. Portfolio showcasing projects and contact.">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="site-wrap">
+        <header class="site-header" role="banner">
+            <div class="brand">
+                <a id="logo" href="#" aria-label="Kibron Tesfatsion homepage">Kibron</a>
+            </div>
 
-
-sdmg
-    <body class="body">
-        <div class="nav-bar">
-            <header>
-                <!-- <a id="logo" href="">Kibron</a> -->
-                <ul>   
-                    <li  > <a id="projectID1" href="#projectID"> Projects</a></li>
-                    <li ><a id="contact1" href="KibronTesfatsion_Resume.pdf" target="_blank">Resume</a></li>
-                    <li ><a id="contact1" href="#contact">Contact</a></li>
+            <nav class="nav-bar" aria-label="Primary navigation">
+                <ul>
+                    <li><a id="websitesLink" href="#websites">Websites</a></li>
+                    <li><a id="projectID1" href="#projectID">Projects</a></li>
+                    <li><a id="resumeLink" class="external-link" href="KibronTesfatsion_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume
+                         <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.6" fill="none"/><polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                    </a></li>
+                    <li><a id="contact1" href="#contact">Contact</a></li>
                 </ul>
-            </header>
-        </div>
+            </nav>
+        </header>
 
-        <section class="introduction">
-            <h1>Hey, I'm Kibron! <span class="wave">👋</span> </h1>
+        <main>
+            <section class="introduction" aria-labelledby="intro-heading">
+                <h1 id="intro-heading">Hey, I'm Kibron! <span class="wave" aria-hidden="true">👋</span></h1>
 
-            <p class="intro-text">I'm a <strong>Data Analyst</strong> and <strong>Front-End Developer</strong>, 
-                focused on using <strong>data</strong> to create meaningful solutions. In addition to analyzing 
-                <strong>complex datasets</strong> and building <strong>intuitive web applications</strong>, I'm also deeply engaged 
-                in <strong>research</strong>, exploring ways that technology can <strong>improve</strong> lives and inform <strong>decision-making</strong>. 
-                Here, you can explore my projects and see how I use data and technology to solve real-world 
-                problems.
-               <!-- <a href="#projectID">projects</a>. -->
-            </p>
-        </section>
+                <p class="intro-text">I'm a <strong>Data Analyst</strong> and <strong>Front-End Developer</strong>, 
+                    focused on using <strong>data</strong> to create meaningful solutions. In addition to analyzing 
+                    <strong>complex datasets</strong> and building <strong>intuitive web applications</strong>, I'm also deeply engaged 
+                    in <strong>research</strong>, exploring ways that technology can <strong>improve</strong> lives and inform <strong>decision-making</strong>. 
+                    Here, you can explore my projects and see how I use data and technology to solve real-world 
+                    problems.
+                </p>
+            </section>
 
-        <section class="projects">
-            <div>
-                <h1 id="projectID">Projects</h1>
+            <!-- Websites section (first) -->
+            <section id="websites" class="section-block" aria-labelledby="websites-heading">
+                <div class="section-header">
+                    <h2 id="websites-heading">Websites</h2>
+                    <p class="section-sub">Production sites and public-facing work I've built or maintained</p>
+                </div>
+
+                <div class="projects-grid parent-box">
+                    <!-- Detectaives (first) -->
+                    <article class="project-card project-box">
+                        <a class="project-media external-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="detectaives_logo.png" alt="Detectaives logo">
+                        </a>
+                        <div class="text-content">
+                            <a class="external-link" href="#" target="_blank" rel="noopener noreferrer"><h3>Detectaives
+                                <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.6" fill="none"/><polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                            </h3></a>
+                            <p>
+                                Collaborative web experience focused on interactive data exploration and storytelling. Built with an emphasis on usability and visual clarity to surface insights to a general audience.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Research Lab Website (second) -->
+                    <article class="project-card project-box">
+                        <a class="project-media external-link" href="https://thatlab.umd.edu" target="_blank" rel="noopener noreferrer">
+                            <img src="Lab.png" alt="Research Lab Website project screenshot">
+                        </a>
+                        <div class="text-content">
+                            <a class="external-link" href="https://thatlab.umd.edu" target="_blank" rel="noopener noreferrer"><h3>Research Lab Website
+                                <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.6" fill="none"/><polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                            </h3></a>
+                            <p>
+                                As a front-end developer and researcher at THAT Lab, I enhanced the 
+                                website to better showcase our work in human-computer interaction. 
+                                This project highlights my skills in web development, accessibility, 
+                                and user-centered design.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Personal Website (third) -->
+                    <article class="project-card project-box">
+                        <a class="project-media external-link" href="https://kibront.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+                            <img src="PortfolioScreenshot.png" alt="Personal Website screenshot">
+                        </a>
+                        <div class="text-content">
+                            <a class="external-link" href="https://kibront.github.io/Portfolio/" target="_blank" rel="noopener noreferrer"><h3>Personal Website
+                                <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.6" fill="none"/><polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                            </h3></a>
+                            <p>
+                                This page — designed in Figma and built responsively to showcase projects and research. Focused on clarity, accessibility, and ease of navigation.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Projects section (second) -->
+            <section id="projectID" class="section-block" aria-labelledby="project-heading">
+                <div class="section-header">
+                    <h2 id="project-heading">Projects</h2>
+                    <p class="section-sub">Analysis, models, and demos — experiments and research prototypes</p>
+                </div>
+
+                <div class="projects-grid parent-box">
+                    <article class="project-card project-box">
+                        <a class="project-media external-link" href="https://github.com/KibronT/IMDB-Analysis.git" target="_blank" rel="noopener noreferrer">
+                            <img src="Screenshot 2025-01-14 at 6.37.06 PM.png" alt="IMDB Insights screenshot">
+                        </a>
+                        <div class="text-content">
+                            <a class="external-link" href="https://github.com/KibronT/IMDB-Analysis.git" target="_blank" rel="noopener noreferrer"><h3>IMDb Insights & Models
+                                <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.6" fill="none"/><polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                            </h3></a>
+                            <p>
+                                This project involved analyzing the IMDB dataset to explore relationships between movie ratings, metascores, and gross earnings. I visualized data using scatterplots and calculated the Pearson correlation coefficient to identify key patterns. To ensure data accuracy, I applied the interquartile range (IQR) method to detect and remove outliers. Additionally, I built regression models and conducted hypothesis testing to compare metascores between action and non-action movies.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-box">
+                        <a class="project-media external-link" href="https://github.com/KibronT/Fox-News-Analysis.git" target="_blank" rel="noopener noreferrer">
+                            <img src="A2.png" alt="Fox News Trends project screenshot">
+                        </a>
+                        <div class="text-content">
+                            <a class="external-link" href="https://github.com/KibronT/Fox-News-Analysis.git" target="_blank" rel="noopener noreferrer"><h3>Fox News Trends & Analysis
+                                <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.6" fill="none"/><polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                            </h3></a>
+                            <p>
+                                Analyzed engagement metrics such as reactions, comments, and shares on Fox News social media posts, uncovering patterns in audience behavior. Created histograms, scatterplots, and statistical summaries to visualize trends and identify correlations. Conducted hypothesis testing, including a Z-test, to evaluate shifts in audience sentiment and measure the impact of controversial topics. This project highlights my proficiency in data analysis, visualization, and statistical modeling to derive actionable insights and inform decision-making.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="contact-section">
+                <h2 class="contact" id="contact">Contact Me</h2>
+                <div class="contact-links">
+                    <a class="contact-link" href="mailto:kibrontes@gmail.com" aria-label="Email Kibron">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11zM4.5 6 12 11l7.5-5H4.5z" fill="currentColor"/></svg>
+                        kibrontes@gmail.com
+                    </a>
+
+                    <a class="contact-link external-link" href="https://www.linkedin.com/in/kibron/" target="_blank" rel="noopener noreferrer" aria-label="Kibron on LinkedIn">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5A2.5 2.5 0 1 0 4.98 8.5 2.5 2.5 0 0 0 4.98 3.5zM3 9h4v12H3zM9 9h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.66 4.77 6.12V21H19v-5.05c0-1.2-.02-2.75-1.68-2.75-1.68 0-1.94 1.32-1.94 2.67V21H11V9z" fill="currentColor"/></svg>
+                        LinkedIn
+                        <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.6" fill="none"/><polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                    </a>
+
+                    <a class="contact-link external-link" href="https://github.com/KibronT" target="_blank" rel="noopener noreferrer" aria-label="Kibron on GitHub">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.66 3.01 8.62 7.19 10.02.53.1.72-.23.72-.5 0-.25-.01-.92-.01-1.8-2.92.64-3.54-1.4-3.54-1.4-.48-1.22-1.17-1.55-1.17-1.55-.96-.66.07-.65.07-.65 1.06.07 1.62 1.09 1.62 1.09.94 1.6 2.47 1.14 3.07.87.1-.68.37-1.14.67-1.4-2.33-.27-4.78-1.17-4.78-5.2 0-1.15.4-2.09 1.06-2.83-.11-.27-.46-1.36.1-2.83 0 0 .86-.28 2.82 1.07A9.6 9.6 0 0 1 12 6.8c.87.004 1.75.12 2.57.35 1.96-1.35 2.82-1.07 2.82-1.07.56 1.47.21 2.56.10 2.83.66.74 1.06 1.68 1.06 2.83 0 4.04-2.46 4.92-4.8 5.18.38.33.72.98.72 1.98 0 1.43-.01 2.58-.01 2.93 0 .27.19.61.73.5A11.11 11.11 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5z" fill="currentColor"/></svg>
+                        GitHub
+                        <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="1.6" fill="none"/><polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="1.6" fill="none"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                    </a>
+                </div>
             </div>
-        <div class="parent-box">
-            <div class="project-box">
-                <div class="image-content">
-                   <a href="https://thatlab.umd.edu" target=”_blank”> <img src="Lab.png" alt="Project image"> </a>
-                </div>
-                <div class="text-content">
-                    <a href="https://thatlab.umd.edu" target=”_blank”> <h3>Research Lab Website</h3> </a>
-                    <p>
-                        As a front-end developer and researcher at THAT Lab, I enhanced the 
-                        website to better showcase our work in human-computer interaction. 
-                        This project highlights my skills in web development, accessibility, 
-                        and user-centered design.
-                    </p>
-                </div>
-            </div>
+        </main>
 
-            <div class="project-box">
-                <div class="image-content">
-                   <a href="https://github.com/KibronT/IMDB-Analysis.git" target=”_blank”> <img src="Screenshot 2025-01-14 at 6.37.06 PM.png" alt="Project image"> </a>
-                </div>
-                <div class="text-content">
-                    <a href="https://github.com/KibronT/IMDB-Analysis.git" target=”_blank”><h3>IMDb Insights & Models</h3></a>
-                    <p>
-                        This project involved analyzing the IMDB dataset to explore relationships 
-                        between movie ratings, metascores, and gross earnings. I visualized data 
-                        using scatterplots and calculated the Pearson correlation coefficient to 
-                        identify key patterns. To ensure data accuracy, I applied the interquartile 
-                        range (IQR) method to detect and remove outliers. Additionally, I built regression 
-                        models and conducted hypothesis testing to compare metascores between action and 
-                        non-action movies. 
- 
-                    </p>
-                </div>
-            </div>
-
-            <div class="project-box">
-                <div class="image-content">
-                   <a href="https://github.com/KibronT/Fox-News-Analysis.git" target=”_blank”> <img src="A2.png" alt="Project image"> </a>
-                </div>
-                <div class="text-content">
-                    <a href="https://github.com/KibronT/Fox-News-Analysis.git" target=”_blank”> <h3>Fox News Trends & Analysis</h3> </a>
-                    <p>
-                        Analyzed engagement metrics such as reactions, comments, and shares on Fox 
-                        News social media posts, uncovering patterns in audience behavior. 
-                        Created histograms, scatterplots, and statistical summaries to visualize 
-                        trends and identify correlations. Conducted hypothesis testing, including a 
-                        Z-test, to evaluate shifts in audience sentiment and measure the impact of 
-                        controversial topics. This project highlights my proficiency in data analysis, 
-                        visualization, and statistical modeling to derive actionable insights and inform 
-                        decision-making.
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="project-box">
-                <div class="image-content">
-                   <a href="https://kibront.github.io/Portfolio/" target=”_blank”> <img src="PortfolioScreenshot.png" alt="Project image"> </a>
-                </div>
-                <div class="text-content">
-                    <a href="https://kibront.github.io/Portfolio/" target=”_blank”> <h3>Personal Website</h3> </a>
-                    <p>
-                        This page! It’s designed to showcase my work with clarity and ease of navigation. 
-                        I used Figma to plan and design the layout before beginning development. 
-                        The website is fully responsive, user-friendly, and features a clean, 
-                        professional layout. 
-                    </p>
-                </div>
-            </div>
-        </div>
-           
-
-            <h1 class="contact" id="contact">Contact Me</h1>
-            <div class="contact-links">
-                    <a >kibrontes@gmail.com</a>
-                <span id="spanSpecial">
-                    <a href="https://www.linkedin.com/in/kibron/" target=”_blank”>LinkedIn</a>
-                </span>
-                    <a href="https://github.com/KibronT" target=”_blank”>GitHub</a>
-            </div>
-        </section>
-
-        <div id="footer">
-            <footer>
-                <p>Made by Kibron Tesfatsion © 2025</p>
-            </footer>
-        </div>
-    </body>
+        <footer id="footer" role="contentinfo">
+            <p>Made by Kibron Tesfatsion © 2025</p>
+        </footer>
+    </div>
+</body>
 </html>
