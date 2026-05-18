@@ -136,6 +136,11 @@ html, body { height: 100%; margin: 0; padding: 0; font-family: Inter, system-ui,
 .project-card h3, .project-box h3 { margin: 0 0 8px 0; font-size: 1.05rem; color: #061025; }
 .project-card p, .project-box p { margin: 0; color: var(--muted); font-size: 0.96rem; }
 
+/* Text-only card variant (no image) */
+.project-card.text-only, .project-box.text-only { padding: 20px 22px; }
+.project-card.text-only h3, .project-box.text-only h3 { margin: 0 0 6px 0; }
+.project-card.text-only p, .project-box.text-only p { font-size: 0.92rem; }
+
 /* Contact */
 .contact-section, .contact {
     margin-top: 28px;
