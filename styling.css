@@ -140,6 +140,9 @@ html, body { height: 100%; margin: 0; padding: 0; font-family: Inter, system-ui,
 .project-card.text-only, .project-box.text-only { padding: 20px 22px; }
 .project-card.text-only h3, .project-box.text-only h3 { margin: 0 0 6px 0; }
 .project-card.text-only p, .project-box.text-only p { font-size: 0.92rem; }
+.project-card.text-only .text-content > a, .project-box.text-only .text-content > a { text-decoration: none; color: inherit; }
+.project-card.text-only .text-content > a:hover h3, .project-box.text-only .text-content > a:hover h3 { color: var(--accent); }
+.card-detail { margin-top: 6px !important; font-size: 0.85rem !important; color: #94a3b8 !important; }
 
 /* Contact */
 .contact-section, .contact {
