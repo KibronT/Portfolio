@@ -133,6 +133,8 @@ html, body { height: 100%; margin: 0; padding: 0; font-family: Inter, system-ui,
 
 /* content */
 .project-card .text-content, .project-box .text-content { flex: 1; }
+.project-card .text-content > a, .project-box .text-content > a { text-decoration: none; color: inherit; }
+.project-card .text-content > a:hover h3, .project-box .text-content > a:hover h3 { color: var(--accent); }
 .project-card h3, .project-box h3 { margin: 0 0 8px 0; font-size: 1.05rem; color: #061025; }
 .project-card p, .project-box p { margin: 0; color: var(--muted); font-size: 0.96rem; }
 
